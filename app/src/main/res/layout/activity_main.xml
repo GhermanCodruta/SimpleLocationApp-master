@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/latitudeTextGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/latitudeValueGPS"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/latitudeValueGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="0.0000"
+            android:textSize="20sp"
+            android:layout_marginTop="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/longitudeValueGPS"
+            android:layout_alignStart="@+id/longitudeValueGPS" />
+
+        <TextView
+            android:id="@+id/longitudeTextGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/longitudeValueGPS"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/longitudeValueGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="0.0000"
+            android:textSize="20sp"
+            android:layout_below="@+id/latitudeValueGPS"
+            android:layout_toRightOf="@+id/longitudeTextGPS"
+            android:layout_marginLeft="24dp" />
+
+        <Button
+            android:id="@+id/locationControllerGPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toggleGPSUpdates"
+            android:text="@string/resume"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="207dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
